@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Edición
+  body
+    
+    h1 Edita aquí 
+    
+    div.formIndex
+      form(action="/", method="post")
+          div 
+              input(type="text" name="nombre" id="nombre" value=user.nombre)  
+
+          div 
+              input(type="email" name="direccion" id="email" value=user.direccion) 
+
+          div 
+              input(type="text" name="telefono" id="telefono" value=user.telefono)
+
+          div.enviar 
+              button(type="submit") Editar
+    
+    div 
+          
+
+    div.salir  
+        a(href="/logout") Salir
+
+
+    
+
+
+
+            
+

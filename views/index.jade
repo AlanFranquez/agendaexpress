@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Lista de Usuarios
+  body
+    
+    h1 Bienvenido #{u}    
+    
+    div.formIndex
+      form(action="/", method="post")
+          div 
+              input(type="text" name="nombre" id="nombre" placeholder="nombre")  
+
+          div 
+              input(type="email" name="direccion" id="email" placeholder="email") 
+
+          div 
+              input(type="text" name="telefono" id="telefono" placeholder="telefono")
+
+          div.enviar 
+              button(type="submit") Agregar
+    
+    div 
+    ul
+      each user in usuarios
+        li 🧑 #{user.nombre} 📧 #{user.direccion} 📳 #{user.telefono}
+          
+          div 
+            form(action="/delete/#{user.id}", method="post") 
+              button.eliminar(type="submit") Eliminar 
+            button.editar 
+              a(href="/editar/#{user.id}") Editar
+          
+
+    div.salir  
+        a(href="/logout") Salir
+
+
+    
+
+
+
+            
+

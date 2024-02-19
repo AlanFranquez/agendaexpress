@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='/stylesheets/login.css')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Lista de Usuarios
+  body
+    
+    div.divForm
+
+      div.animacion
+
+
+      div 
+        form.form-container(action="/login", method="post")
+            div
+                input(type="text" name="username" id="username" placeholder="Username")
+
+            div
+                input(type="email" name="direccion" id="email" placeholder="E-mail")
+
+
+
+            div
+                input(placeholder="password" type="password" name="Password" id="password")
+
+            div 
+                button(type="submit") Registrarse
+
+            p #{error}
+
+            div.link 
+              a(href="/login") ¿Ya tienes cuenta?
+
+    
+    

@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Poppins", sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.divForm {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinea horizontalmente */
+  flex-direction: column;
+  height: 100vh;
+}
+
+.divForm .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+h1 {
+  padding-top: 10px;
+
+  text-align: center;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  padding: 13px; /* Modificado para que el padding sea igual en todos los lados */
+  width: 300px; /* Ajusta el ancho según sea necesario */
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animacion {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  animation: girar 2s linear infinite; /* La animación dura 2 segundos y se repite infinitamente */
+}
+
+.link {
+  margin: 10px;
+}
+
+.formIndex .enviar button {
+  width: 150px;
+}
